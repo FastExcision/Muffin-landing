@@ -1,0 +1,77 @@
+@use '../var';
+
+h1 {
+  font-family: var.$main-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 18%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var.$main-font;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 16%;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var.$main-font;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 8%;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: var.$main-font;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var.$main-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.action-large {
+  font-family: var.$main-font;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 16%;
+  text-transform: uppercase;
+}
+
+.action-small {
+  font-family: var.$main-font;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-family: var.$second-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 5%;
+}
+
+.slider {
+  font-family: var.$main-font;
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
