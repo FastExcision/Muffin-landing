@@ -1,0 +1,13 @@
+@use '../var';
+@use '../mixins';
+
+@include mixins.header-style;
+
+.nav-item_link {
+  color: var.$white;
+}
+
+.nav-item_first-page {
+  text-decoration: underline;
+}
+
