@@ -1,35 +1,39 @@
 @font-face {
   font-family: 'SFProDisplay';
-  src: local('SFProDisplay-Bold'),
-         url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
-         url('../fonts/SFProDisplay-Bold.woff') format('woff');
+  src:
+    local('SFProDisplay-Bold'),
+    url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProDisplay';
-  src: local('SFProDisplay-BoldItalic'),
-  url('../fonts/SFProDisplay-BoldItalic.woff2') format('woff2'),
-  url('../fonts/SFProDisplay-BoldItalic.woff') format('woff');
+  src:
+    local('SFProDisplay-BoldItalic'),
+    url('../fonts/SFProDisplay-BoldItalic.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-BoldItalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'SFProDisplay';
-  src: local('SFProDisplay-SemiBold'),
-  url('../fonts/SFProDisplay-SemiBold.woff2') format('woff2'),
-  url('../fonts/SFProDisplay-SemiBold.woff') format('woff');
+  src:
+    local('SFProDisplay-SemiBold'),
+    url('../fonts/SFProDisplay-SemiBold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SFProDisplay';
-  src: local('SFProDisplay-Regular'),
-  url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-  url('../fonts/SFProDisplay-Regular.woff') format('woff');
+  src:
+    local('SFProDisplay-Regular'),
+    url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }

@@ -9,6 +9,11 @@ const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
+function includeHTML(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  return content;
+}
+
 module.exports = {
   mode,
   target,

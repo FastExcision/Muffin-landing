@@ -1,0 +1,81 @@
+@use '../var';
+@use '../mixins';
+
+.hello-container {
+  margin-top: 106px;
+  margin-left: 80px;
+  height: 227px;
+  display: inline-flex;
+  align-items: center;
+  color: var.$dark-blue;
+}
+
+.o-container {
+  background-image: url('../../img/first-page/dog-mini.png');
+  background-blend-mode: overlay;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img_mini-dog {
+  position: absolute;
+  z-index: -1;
+}
+
+.text-container {
+  position: relative;
+  margin-top: 12px;
+  width: 410px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.main-button {
+  @include mixins.main-button_style;
+}
+
+.text_its-me {
+  position: absolute;
+  top: 42.5%;
+  right: 804px;
+}
+//
+
+.img_heart-1 {
+  position: absolute;
+  top: 37px;
+  right: 271px;
+  mix-blend-mode: overlay;
+}
+
+.img_texture-break {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img_dog {
+  width: 854px;
+  height: 949px;
+  position: absolute;
+  right: 0;
+  top: 169px;
+  z-index: 1;
+}
+
+.first-page-img {
+  background-image: url('../../img/first-page/Shape.png'),
+    url('../../img/first-page/Arrow.png'),
+    url('../../img/first-page/Heart-2.png');
+  background-blend-mode: overlay;
+  background-size: auto, auto, auto;
+  background-position:
+    bottom 0 right 0,
+    top 42.5% right 810px,
+    top 99% left 453px;
+  background-repeat: no-repeat;
+}

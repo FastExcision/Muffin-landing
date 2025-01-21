@@ -6,14 +6,12 @@
     font-weight: 700;
     font-style: normal;
     font-size: 322px;
-    line-height: 384.26px;
   }
   h2 {
     font-family: SFProDisplay, sans-serif;
     font-weight: 700;
     font-style: italic;
     font-size: 68px;
-    line-height: 81.15px;
     letter-spacing: 0.03em;
   }
   h3 {
@@ -21,7 +19,6 @@
     font-weight: 700;
     font-style: italic;
     font-size: 38px;
-    line-height: 45.35px;
     letter-spacing: 0.03em;
   }
   h4 {
@@ -29,22 +26,19 @@
     font-weight: 600;
     font-style: normal;
     font-size: 200px;
-    line-height: 24.2px;
   }
   h5 {
     font-family: SFProDisplay, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    line-height: 23.86px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.07em;
   }
   h6 {
     font-family: SFProDisplay, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 19.09px;
   }
 }
 
@@ -53,7 +47,6 @@
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
-  line-height: 28.64px;
   letter-spacing: 0.03em;
 }
 
@@ -84,4 +77,14 @@
   @include button-text-style;
   width: 408px;
   height: 61px;
+  border: none;
+  border-radius: 15px;
+  background-color: var.$white;
+  color: var.$dark-blue;
+  &:hover {
+    background-color: var.$blue;
+  }
+  &:visited {
+    background-color: var.$blue;
+  }
 }
