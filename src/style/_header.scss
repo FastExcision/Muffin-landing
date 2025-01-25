@@ -1,0 +1,37 @@
+@use 'var';
+@use 'mixins';
+
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.7%;
+  z-index: 500;
+}
+.nav-menu {
+  margin: auto;
+  display: flex;
+  width: 37.62vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item__link {
+  text-decoration: none;
+  text-underline-offset: 3px;
+  color: rebeccapurple;
+
+  &:hover {
+    text-decoration: underline 1px;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+    text-underline-offset: 3px;
+  }
+}
+
+.nav-item__title-page {
+  text-decoration: underline;
+}

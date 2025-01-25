@@ -1,5 +1,8 @@
-@use 'style/reset';
+@use 'style/normalize';
 @use 'style/fonts';
-@use 'style/index/main';
-@use 'style/index/header';
-@use 'style/index/section';
+@use 'style/cards';
+@use 'style/main';
+@use 'style/header';
+@use 'style/sections/title-page';
+@use 'style/sections/childhood-page';
+@use 'style/sections/one-day-page';

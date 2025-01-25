@@ -1,84 +1,18 @@
 @use 'var';
 
-@mixin h-text-style {
-  h1 {
-    font-family: SFProDisplay, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 322px;
-  }
-  h2 {
-    font-family: SFProDisplay, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 68px;
-    letter-spacing: 0.03em;
-  }
-  h3 {
-    font-family: SFProDisplay, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 38px;
-    letter-spacing: 0.03em;
-  }
-  h4 {
-    font-family: SFProDisplay, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 200px;
-  }
-  h5 {
-    font-family: SFProDisplay, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    letter-spacing: 0.07em;
-  }
-  h6 {
-    font-family: SFProDisplay, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-  }
-}
-
 @mixin button-text-style {
   font-family: SFProDisplay, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.39vw;
   letter-spacing: 0.03em;
-}
-
-@mixin header-style {
-  header {
-    padding-top: 30px;
-  }
-  .nav {
-    margin: auto;
-    display: flex;
-    width: 650px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-item_link {
-    text-decoration: none;
-    text-underline-offset: 3px;
-
-    &:hover {
-      text-decoration: underline 1px;
-      text-decoration-color: rgba(255, 255, 255, 0.5);
-      text-underline-offset: 3px;
-    }
-  }
 }
 
 @mixin main-button_style {
   @include button-text-style;
-  width: 408px;
-  height: 61px;
+  padding: 0.93vw 0;
   border: none;
-  border-radius: 15px;
+  border-radius: 0.87vw;
   background-color: var.$white;
   color: var.$dark-blue;
   &:hover {

@@ -1,0 +1,66 @@
+@use '../var';
+
+.one-day-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.one-day-page_title-container_background {
+  max-width: 1728px;
+  min-height: 1899px;
+  background-color: var.$pink;
+  background-image:
+          url('../../img/one-day-page/title-container/coss.png'),
+          url('../../img/one-day-page/title-container/question.png'),
+          url('../../img/one-day-page/title-container/arrow-3.png'),
+          url('../../img/one-day-page/title-container/bird.png'),
+          url('../../img/one-day-page/title-container/treepic.png'),
+          url('../../img/one-day-page/title-container/car-w-muffin.png'),
+          url('../../img/one-day-page/title-container/tree-white.png'),
+          url('../../img/one-day-page/title-container/house.png'),
+          url('../../img/one-day-page/title-container/road-white.png'),
+          url('../../img/one-day-page/title-container/spiral-circle.png');
+  background-size: 65%, auto, auto, auto, auto, auto, 100%, auto, auto;
+  background-position:
+          top 1549px left 15px,
+          top 905px left 734px,
+          top 802px left 855px,
+          top 1597px left 1132px,
+          top 681px left 1076px,
+          top 1064px left 99px,
+          top 788px left 9px,
+          top 111px left 7.5%,
+          top 35px left 0,
+          top -35px left -25px;
+  background-repeat: no-repeat;
+}
+
+.title-container__subtitle {
+  position: absolute;
+  left: 100px;
+  top: 160px;
+}
+.title-container__text-content {
+  color: var.$white;
+  position: absolute;
+  top: 518px;
+  right: 100px;
+  width: 367px;
+}
+
+.title-container__text-conclusion {
+  color: var.$white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 11px;
+}

@@ -1,0 +1,75 @@
+@use 'var';
+@use 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+.none-select {
+  user-select: none;
+}
+
+.text-margin-top {
+  margin-top: 12px;
+}
+
+.section_padding {
+  padding-left: 5.79%;
+}
+
+.title {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18.63vw;
+  //font-size: 322px;
+}
+
+.subtitle {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3.94vw;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.20vw;
+  letter-spacing: 0.03em;
+}
+
+.text_lg-bold {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.20vw;
+  letter-spacing: 0.03em;
+}
+
+.text_md-bold {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.16vw;
+}
+
+.text_md {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.16vw;
+  letter-spacing: 0.07em;
+}
+.text_sm {
+  font-family: SFProDisplay, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.93vw;
+}
+
+.text-green {
+  color: var.$green
+}

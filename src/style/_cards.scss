@@ -1,0 +1,44 @@
+@use 'var';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var.$white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 461px;
+  height: 610px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_right-clip::after {
+  content: '';
+  position: absolute;
+  right: -54px;
+  top: -18px;
+  width: 186px;
+  height: 153px;
+  background-image: url('../img/cards/right-clip.png');
+  background-repeat: no-repeat;
+}
+.card_left-clip::before {
+  content: '';
+  position: absolute;
+  left: -54px;
+  top: -18px;
+  width: 186px;
+  height: 153px;
+  background-image: url('../img/cards/left-clip.png');
+  background-repeat: no-repeat;
+}
+
+.card__image {
+  border-radius: 20px;
+  width: 100%;
+  min-height: 520px;
+  max-height: 100%;
+}
+
+.card__header {
+  margin-top: 27px;
+}

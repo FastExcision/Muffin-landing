@@ -1,0 +1,63 @@
+@use '../var';
+@use '../mixins';
+
+.childhood-page {
+  min-height: var.$min-height_viewport-high;
+  height: 100svh;
+}
+
+.childhood-page_background {
+  background-image: url('../../img/childhood-page/texture-break-2.png'),
+    url('../../img/childhood-page/arrow2.png'),
+    url('../../img/childhood-page/bone.png'),
+    url('../../img/childhood-page/flower.png');
+  background-size: auto 103.5vh, auto, auto, auto;
+  background-position:
+    bottom 0 right 0,
+    top 33px right 256px,
+    top 444px left 80px,
+    top 769px right 642px;
+
+  background-repeat: no-repeat;
+}
+
+
+
+.childhood-page__content {
+  max-width: 625px;
+  min-height: 537px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 160px;
+  row-gap: 14px;
+}
+
+.childhood-page__about {
+  justify-self: right;
+}
+
+.childhood-page__about_padding {
+  padding-left: 129px;
+}
+.childhood-page__about_padding-md {
+  padding-left: 258px;
+}
+.childhood-page__about_padding-lg {
+  padding-left: 407px;
+}
+
+.card_young-dog {
+  position: absolute;
+  top: 126px;
+  right: 463px;
+  transform: rotate(11deg);
+}
+
+.card_muffin-brother {
+  position: absolute;
+  top: 413px;
+  right: 140px;
+  transform: rotate(-13deg);
+}
