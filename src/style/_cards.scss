@@ -4,41 +4,42 @@
   display: flex;
   flex-direction: column;
   background-color: var.$white;
-  border-radius: 20px;
-  padding: 20px;
-  width: 461px;
-  height: 610px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1.8vh;
+  padding: 1.8vh;
+  width: 41.3vh;
+  height: 54.6vh;
+  box-shadow: 2vh 1.15vh 33px 0 #cbabbd3d;
 }
 
 .card_right-clip::after {
   content: '';
   position: absolute;
-  right: -54px;
-  top: -18px;
-  width: 186px;
-  height: 153px;
+  right: -4.8vh;
+  top: -1.6vh;
+  width: 16.6vh;
+  height: 13.7vh;
   background-image: url('../img/cards/right-clip.png');
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .card_left-clip::before {
   content: '';
   position: absolute;
-  left: -54px;
-  top: -18px;
-  width: 186px;
-  height: 153px;
+  left: -4.8vh;
+  top: -1.6vh;
+  width: 16.6vh;
+  height: 13.7vh;
   background-image: url('../img/cards/left-clip.png');
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .card__image {
-  border-radius: 20px;
+  border-radius: 1.8vh;
   width: 100%;
-  min-height: 520px;
   max-height: 100%;
 }
 
 .card__header {
-  margin-top: 27px;
+  margin-top: 2.4vh;
 }

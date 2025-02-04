@@ -4,7 +4,6 @@
 .title-page {
   position: relative;
   width: 100%;
-  min-height: var.$min-height_viewport-high;
   height: 100svh;
   background-color: var.$blue;
   color: var.$white;
@@ -19,7 +18,7 @@
 }
 
 .dog-img-container:before {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url('../../img/title-page/Arrow.png');
   background-size: cover;
@@ -51,7 +50,6 @@
   display: inline-flex;
   align-items: center;
   color: var.$dark-blue;
-
 }
 
 .background_mini-dog {
@@ -75,14 +73,16 @@
   @include mixins.main-button_style;
 }
 
-
-
 .title-page_background {
   background-image: url('../../img/title-page/texture_break.png'),
     url('../../img/title-page/Heart-2.png'),
     url('../../img/title-page/Heart-1.png'),
     url('../../img/title-page/Shape.png');
-  background-size: 19.5% 100% ,23% auto, 12.5% auto,auto 76.4%;
+  background-size:
+    19.5% 100%,
+    23% auto,
+    12.5% auto,
+    auto 76.4%;
   background-position:
     bottom 0 right 0,
     top 99% left 33%,

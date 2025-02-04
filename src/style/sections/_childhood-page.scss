@@ -2,8 +2,11 @@
 @use '../mixins';
 
 .childhood-page {
-  min-height: var.$min-height_viewport-high;
   height: 100svh;
+}
+
+.childhood-page__card-wrapper {
+
 }
 
 .childhood-page_background {
@@ -11,27 +14,32 @@
     url('../../img/childhood-page/arrow2.png'),
     url('../../img/childhood-page/bone.png'),
     url('../../img/childhood-page/flower.png');
-  background-size: auto 103.5vh, auto, auto, auto;
+  background-size:
+    auto 100%,
+    auto 37%,
+    39% auto,
+    auto 19.5%;
   background-position:
     bottom 0 right 0,
-    top 33px right 256px,
-    top 444px left 80px,
-    top 769px right 642px;
-
+    top 5% right 19%,
+    bottom 10% left 8%,
+    bottom 12% right 45%;
   background-repeat: no-repeat;
 }
 
-
+.childhood-page__subtitle {
+  padding-top: 14.3vh;
+  padding-bottom: 1.25vh;
+}
 
 .childhood-page__content {
-  max-width: 625px;
-  min-height: 537px;
+  width: 36%;
+  height: 48%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding-top: 160px;
-  row-gap: 14px;
+  row-gap: 1.25vh;
 }
 
 .childhood-page__about {
@@ -39,25 +47,28 @@
 }
 
 .childhood-page__about_padding {
-  padding-left: 129px;
+  padding-left: 20%;
 }
 .childhood-page__about_padding-md {
-  padding-left: 258px;
+  padding-left: 38%;
 }
 .childhood-page__about_padding-lg {
-  padding-left: 407px;
+  padding-left: 62%;
+}
+
+.childhood-page__card-wrapper {
 }
 
 .card_young-dog {
   position: absolute;
-  top: 126px;
-  right: 463px;
+  top: 11.3%;
+  right: 27%;
   transform: rotate(11deg);
 }
 
 .card_muffin-brother {
   position: absolute;
-  top: 413px;
-  right: 140px;
+  top: 37%;
+  right: 8%;
   transform: rotate(-13deg);
 }

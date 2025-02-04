@@ -10,7 +10,12 @@ const childhoodPageElement = document.getElementById('childhood-page');
 const oneDayPageElement = document.getElementById('one-day-page');
 
 const importPagesArray = [header, titlePage, childhoodPage, oneDayPage];
-const elementsArray = [headerElement, titlePageElement, childhoodPageElement, oneDayPageElement];
+const elementsArray = [
+  headerElement,
+  titlePageElement,
+  childhoodPageElement,
+  oneDayPageElement,
+];
 const loadSection = () => {
   for (let i = 0; i < elementsArray.length; i += 1) {
     if (elementsArray[i]) {
