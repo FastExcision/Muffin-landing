@@ -8,18 +8,11 @@
   justify-content: center;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-}
-
 .one-day-page__title-container {
-  height: 170svh;
+  height: 109.3vw;
 
   .title-container__subtitle {
-    position: absolute;
-    left: 5.7%;
-    top: 8%;
+    margin-top: 10%;
   }
   .title-container__text-content {
     color: var.$white;
@@ -28,7 +21,6 @@
     right: 5.5%;
     width: 23%;
   }
-
   .title-container__text-conclusion {
     color: var.$white;
     position: absolute;
@@ -52,35 +44,200 @@
     url('../../img/one-day-page/title-container/road-white.png'),
     url('../../img/one-day-page/title-container/spiral-circle.png');
   background-size:
-    auto 10%,
-    auto 7.5%,
-    auto 11%,
-    auto 12.2%,
-    auto 49%,
-    auto 25.5%,
-    auto 32%,
-    auto 42%,
-    auto 91%,
-    auto 59%;
+    11.5% auto,
+    6% auto,
+    18% auto,
+    24% auto,
+    38% auto,
+    67.5% auto,
+    31% auto,
+    58% auto,
+    100% auto,
+    66% auto;
   background-position:
-    top 90% left calc(50vw - 77.5vh),
-    top 50.7% left calc(50vw - 12vh),
-    top 47.5% left calc(50vw - 1vh),
-    top 96% left calc(50vw + 24vh),
-    top 70.4% left calc(50vw + 18.9vh),
-    top 75% left calc(50vw - 68.5vh),
-    top 61% left calc(50vw - 76vh),
-    top 10% left calc(50vw - 67vh),
-    top 18% center,
-    top -2% left calc(50vw - 77.5vh);
+    top 90% left 0,
+    top 50.7% left 45%,
+    top 47.5% left 61%,
+    top 96% left 87%,
+    top 70.4% right 0,
+    top 75% left 18%,
+    top 61% left 1%,
+    top 10% left 16%,
+    top 18% right 0,
+    top -2% left -1%;
   background-repeat: no-repeat;
 }
 
 .one-day-page__scary-muffin-container {
-  height: 241vh;
+  height: 156vw;
+  .scary-muffin-container__first-text-container {
+    margin-top: 23%;
+  }
+  .scary-muffin-container__second-text-container {
+    margin-top: 17%;
+    width: 47%;
+  }
+  .scary-muffin-container__third-text-container {
+    width: 42%;
+    align-items: end;
+    margin-left: 48.3%;
+    margin-top: 74.1%;
+  }
+
+  .scary-muffin-container__fourth-text {
+    position: absolute;
+    bottom: 7.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card_my-first-day {
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    transform: rotate(14.84deg);
+  }
 }
 
 .one-day-page__scary-muffin-container_background {
   background-color: var.$white;
-
+  background-image: url('../../img/one-day-page/scary-muffin-container/couch-pic.png'),
+    url('../../img/one-day-page/scary-muffin-container/cloud-pic.png'),
+    url('../../img/one-day-page/scary-muffin-container/cloud-pic.png'),
+    url('../../img/one-day-page/scary-muffin-container/cloud-revert.png'),
+    url('../../img/one-day-page/scary-muffin-container/shadow.png'),
+    url('../../img/one-day-page/scary-muffin-container/muffin-scary-pic.png'),
+    url('../../img/one-day-page/scary-muffin-container/questions.png'),
+    url('../../img/one-day-page/scary-muffin-container/texture-break-3.png');
+  background-size:
+    79% auto,
+    26.5% auto,
+    42% auto,
+    32% auto,
+    100% auto,
+    71% auto,
+    100% auto,
+    100% auto;
+  background-position:
+    top 45% left 48%,
+    top 92% left -7%,
+    top 75% left 23%,
+    top 94% right 0,
+    bottom 0 left 0,
+    top 5% left 75%,
+    top 25% left 0,
+    top 0 left 0;
+  background-repeat: no-repeat;
 }
+
+.one-day-page__curious-container {
+  height: 116vw;
+  .curious-container__header {
+    width: 55.4%;
+    margin-top: 25.6%;
+  }
+  .curious-container__subtitle {
+    text-align: end;
+  }
+  .curious-container__first-text {
+    position: absolute;
+    top: 30.9%;
+    left: 43.5%;
+    width: 52%;
+  }
+  .curious-container__second-text {
+    position: absolute;
+    top: 80%;
+    left: 5.8%;
+    width: 63.5%;
+  }
+}
+
+.one-day-page__curious-container_background {
+  background-color: var.$pink;
+  background-image: url('../../img/one-day-page/curious-container/break-5.png'),
+    url('../../img/one-day-page/curious-container/break-6.png'),
+    url('../../img/one-day-page/curious-container/exclamation.png'),
+    url('../../img/one-day-page/curious-container/exclamation.png'),
+    url('../../img/one-day-page/curious-container/exclamation.png'),
+    url('../../img/one-day-page/curious-container/exclamation.png'),
+    url('../../img/one-day-page/curious-container/half-flower.png'),
+    url('../../img/one-day-page/curious-container/vector-road.svg');
+  background-size:
+    100% auto,
+    100% auto,
+    4% auto,
+    4% auto,
+    4% auto,
+    4% auto,
+    18% auto,
+    100% auto;
+  background-position:
+    top -12% left 0,
+    bottom -1% left 0,
+    top 47.5% left 76%,
+    top 47.5% left 81.5%,
+    top 47.5% left 87%,
+    top 47.5% left 92.5%,
+    top 23% left 0,
+    top 60% left 0;
+  background-repeat: no-repeat;
+}
+
+.one-day-page__love-container {
+  height: 147.2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .love-container__image {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.one-day-page__love-container_background {
+  background-color: var.$white;
+  background-image: url('../../img/one-day-page/love-container/break-7.png');
+  background-size: 100% auto;
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+}
+
+.one-day-page__talent-container {
+  height: 102vw;
+  .talent-container__text {
+    width: 53% ;
+    margin-top: 7%;
+  }
+  .talent-container__header {
+    position: absolute;
+    left: 51%;
+    top: 32.5%;
+  }
+}
+
+.one-day-page__talent-container_background {
+  background-color: var.$purple;
+  background-image: url('../../img/one-day-page/talent-container/muffin-in-the-car.png'),
+    url('../../img/one-day-page/talent-container/heart-3.png'),
+    url('../../img/one-day-page/talent-container/break-8.png');
+  background-size:
+    100% auto,
+    15.3% auto,
+    7.6% auto;
+  background-position:
+    bottom 0 left 0,
+    top 0 left 62%,
+    bottom -2% right -1%;
+  background-repeat: no-repeat;
+}
+
+//.checkimage {
+//  width: 204px;
+//  height: 171px;
+//  background-color: green;
+//  opacity: 0.2;
+//  position: absolute;
+//  top: -15px;
+//  left: 948px;
+//}

@@ -1,8 +1,8 @@
 /* global document */
-import header from '../header.html';
-import titlePage from '../title-page.html';
-import childhoodPage from '../childhood-page.html';
-import oneDayPage from '../one-day-page.html';
+import header from '../pages/header.html';
+import titlePage from '../pages/title-page.html';
+import childhoodPage from '../pages/childhood-page.html';
+import oneDayPage from '../pages/one-day-page.html';
 
 const headerElement = document.getElementById('header');
 const titlePageElement = document.getElementById('title-page');

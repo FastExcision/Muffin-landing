@@ -1,6 +1,5 @@
-@use 'var';
-@use 'mixins';
-
+@use '../var';
+@use '../mixins';
 header {
   position: absolute;
   left: 50%;
