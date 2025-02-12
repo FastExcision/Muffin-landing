@@ -144,6 +144,55 @@
     left: 43.5%;
     width: 52%;
   }
+  .curious-container__mini-cards {
+    position: relative;
+    margin-left: -6.2%;
+    margin-top: 18%;
+    width: 99.1vw;
+    height: 36.1vw;
+    .mini-card_tasty-food {
+      position: absolute;
+      background-color: var.$green;
+      top: 14%;
+      left: 7%;
+    }
+    .mini-card_toy {
+      position: absolute;
+      top: 38%;
+      left: 29%;
+    }
+    .mini-card_free-space {
+      position: absolute;
+      background-color: var.$green;
+      top: 10.5%;
+      left: 51%;
+    }
+    .mini-card_care {
+      position: absolute;
+      top: 43%;
+      left: 73%;
+    }
+  }
+  .curious-container__mini-cards_background {
+  background-image:     url('../../img/one-day-page/curious-container/exclamation.png'),
+  url('../../img/one-day-page/curious-container/exclamation.png'),
+  url('../../img/one-day-page/curious-container/exclamation.png'),
+  url('../../img/one-day-page/curious-container/exclamation.png'),
+  url('../../img/one-day-page/curious-container/vector-road.svg');
+    background-size:
+    4vw auto,
+    4vw auto,
+    4vw auto,
+    4vw auto,
+    100% auto;
+    background-position:
+            top 5.5% left 76%,
+            top 5.5% left 81.5%,
+            top 5.5% left 87%,
+            top 5.5% left 92.5%,
+            top 0 left 0;
+    background-repeat: no-repeat;
+  }
   .curious-container__second-text {
     position: absolute;
     top: 80%;
@@ -156,30 +205,30 @@
   background-color: var.$pink;
   background-image: url('../../img/one-day-page/curious-container/break-5.png'),
     url('../../img/one-day-page/curious-container/break-6.png'),
-    url('../../img/one-day-page/curious-container/exclamation.png'),
-    url('../../img/one-day-page/curious-container/exclamation.png'),
-    url('../../img/one-day-page/curious-container/exclamation.png'),
-    url('../../img/one-day-page/curious-container/exclamation.png'),
-    url('../../img/one-day-page/curious-container/half-flower.png'),
-    url('../../img/one-day-page/curious-container/vector-road.svg');
+    //url('../../img/one-day-page/curious-container/exclamation.png'),
+    //url('../../img/one-day-page/curious-container/exclamation.png'),
+    //url('../../img/one-day-page/curious-container/exclamation.png'),
+    //url('../../img/one-day-page/curious-container/exclamation.png'),
+    url('../../img/one-day-page/curious-container/half-flower.png');
+    //url('../../img/one-day-page/curious-container/vector-road.svg');
   background-size:
     100% auto,
     100% auto,
-    4% auto,
-    4% auto,
-    4% auto,
-    4% auto,
-    18% auto,
-    100% auto;
+    //4% auto,
+    //4% auto,
+    //4% auto,
+    //4% auto,
+    18% auto;
+    //100% auto;
   background-position:
     top -12% left 0,
     bottom -1% left 0,
-    top 47.5% left 76%,
-    top 47.5% left 81.5%,
-    top 47.5% left 87%,
-    top 47.5% left 92.5%,
-    top 23% left 0,
-    top 60% left 0;
+    //top 47.5% left 76%,
+    //top 47.5% left 81.5%,
+    //top 47.5% left 87%,
+    //top 47.5% left 92.5%,
+    top 23% left 0;
+    //top 60% left 0;
   background-repeat: no-repeat;
 }
 
@@ -232,12 +281,4 @@
   background-repeat: no-repeat;
 }
 
-//.checkimage {
-//  width: 204px;
-//  height: 171px;
-//  background-color: green;
-//  opacity: 0.2;
-//  position: absolute;
-//  top: -15px;
-//  left: 948px;
-//}
+

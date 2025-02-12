@@ -1,5 +1,15 @@
 @use 'var';
 
+.mini-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var.$white;
+  border-radius: 4%;
+  padding: 1%;
+  width: 20.3vw;
+  height: 20.8vw;
+}
+
 .card {
   display: flex;
   flex-direction: column;
