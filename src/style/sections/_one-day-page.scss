@@ -12,7 +12,6 @@
   height: 109.3vw;
 
   .title-container__subtitle {
-    margin-top: 10%;
   }
   .title-container__text-content {
     color: var.$white;
@@ -133,7 +132,7 @@
   height: 116vw;
   .curious-container__header {
     width: 55.4%;
-    margin-top: 25.6%;
+    margin-top: 15.7%;
   }
   .curious-container__subtitle {
     text-align: end;
@@ -148,7 +147,7 @@
     position: relative;
     margin-left: -6.2%;
     margin-top: 18%;
-    width: 99.1vw;
+    width: 99vw;
     height: 36.1vw;
     .mini-card_tasty-food {
       position: absolute;
@@ -174,23 +173,23 @@
     }
   }
   .curious-container__mini-cards_background {
-  background-image:     url('../../img/one-day-page/curious-container/exclamation.png'),
-  url('../../img/one-day-page/curious-container/exclamation.png'),
-  url('../../img/one-day-page/curious-container/exclamation.png'),
-  url('../../img/one-day-page/curious-container/exclamation.png'),
-  url('../../img/one-day-page/curious-container/vector-road.svg');
+    background-image: url('../../img/one-day-page/curious-container/exclamation.png'),
+      url('../../img/one-day-page/curious-container/exclamation.png'),
+      url('../../img/one-day-page/curious-container/exclamation.png'),
+      url('../../img/one-day-page/curious-container/exclamation.png'),
+      url('../../img/one-day-page/curious-container/vector-road.svg');
     background-size:
-    4vw auto,
-    4vw auto,
-    4vw auto,
-    4vw auto,
-    100% auto;
+      4vw auto,
+      4vw auto,
+      4vw auto,
+      4vw auto,
+      100% auto;
     background-position:
-            top 5.5% left 76%,
-            top 5.5% left 81.5%,
-            top 5.5% left 87%,
-            top 5.5% left 92.5%,
-            top 0 left 0;
+      top 5.5% left 76%,
+      top 5.5% left 81.5%,
+      top 5.5% left 87%,
+      top 5.5% left 92.5%,
+      top 0 left 0;
     background-repeat: no-repeat;
   }
   .curious-container__second-text {
@@ -203,14 +202,15 @@
 
 .one-day-page__curious-container_background {
   background-color: var.$pink;
-  background-image: url('../../img/one-day-page/curious-container/break-5.png'),
+  background-image:
+    url('../../img/one-day-page/curious-container/break-5.png'),
     url('../../img/one-day-page/curious-container/break-6.png'),
     //url('../../img/one-day-page/curious-container/exclamation.png'),
     //url('../../img/one-day-page/curious-container/exclamation.png'),
     //url('../../img/one-day-page/curious-container/exclamation.png'),
     //url('../../img/one-day-page/curious-container/exclamation.png'),
     url('../../img/one-day-page/curious-container/half-flower.png');
-    //url('../../img/one-day-page/curious-container/vector-road.svg');
+  //url('../../img/one-day-page/curious-container/vector-road.svg');
   background-size:
     100% auto,
     100% auto,
@@ -219,7 +219,7 @@
     //4% auto,
     //4% auto,
     18% auto;
-    //100% auto;
+  //100% auto;
   background-position:
     top -12% left 0,
     bottom -1% left 0,
@@ -228,7 +228,7 @@
     //top 47.5% left 87%,
     //top 47.5% left 92.5%,
     top 23% left 0;
-    //top 60% left 0;
+  //top 60% left 0;
   background-repeat: no-repeat;
 }
 
@@ -255,30 +255,31 @@
 .one-day-page__talent-container {
   height: 102vw;
   .talent-container__text {
-    width: 53% ;
-    margin-top: 7%;
+    width: 53%;
+    margin-top: -3%;
   }
   .talent-container__header {
     position: absolute;
     left: 51%;
     top: 32.5%;
   }
+  .talent-container__image {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .one-day-page__talent-container_background {
   background-color: var.$purple;
-  background-image: url('../../img/one-day-page/talent-container/muffin-in-the-car.png'),
-    url('../../img/one-day-page/talent-container/heart-3.png'),
+  background-image: url('../../img/one-day-page/talent-container/heart-3.png'),
     url('../../img/one-day-page/talent-container/break-8.png');
   background-size:
-    100% auto,
     15.3% auto,
     7.6% auto;
   background-position:
-    bottom 0 left 0,
     top 0 left 62%,
     bottom -2% right -1%;
   background-repeat: no-repeat;
 }
-
-

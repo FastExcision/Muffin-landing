@@ -1,0 +1,163 @@
+@use '../var';
+
+.bad-days-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bad-days-page__afraid-container {
+  height: 150.3vw;
+  .afraid-container__header {
+    margin-left: 14%;
+  }
+  .afraid-container__first-text {
+    margin-top: 2.3%;
+  }
+  .afraid-container__second-text {
+    margin-top: 16%;
+    margin-left: 32%;
+  }
+  .afraid-container__third-text {
+    margin-top: 42%;
+    margin-left: 32%;
+    width: 23.5%;
+  }
+  .afraid-container__fourth-text {
+    position: absolute;
+    bottom: 10.5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.bad-days-page__afraid-container_background {
+  background-color: var.$dark-blue;
+  background-image: url('../../img/bad-days-page/afraid-container/left-side-pic.png'),
+    url('../../img/bad-days-page/afraid-container/right-side-pic.png'),
+    url('../../img/bad-days-page/afraid-container/teardrop-right.png'),
+    url('../../img/bad-days-page/afraid-container/teardrop-left.png'),
+    url('../../img/bad-days-page/afraid-container/muffin-affraid.png'),
+    url('../../img/bad-days-page/afraid-container/waves.png'),
+    url('../../img/bad-days-page/afraid-container/break-9.png');
+  background-size:
+    61.5% auto,
+    66.4% auto,
+    4.2% auto,
+    4.2% auto,
+    99.8% auto,
+    40.3% auto,
+    100% auto;
+  background-position:
+    top 0 left 0,
+    top 0 right 0,
+    top 45.3% left 59.4%,
+    top 44% left 33.5%,
+    top 27% left 0,
+    bottom 6.8% left 50%,
+    bottom 0 right 0;
+  background-repeat: no-repeat;
+}
+
+.bad-days-page__brave-container {
+  height: 135.6vw;
+  .brave-container__first-text {
+    margin-left: 5.7%;
+    margin-top: 4%;
+  }
+  .brave-container__second-text {
+    position: absolute;
+    top: 30%;
+    left: 67%;
+  }
+  .brave-container__image {
+    position: absolute;
+    left: 34%;
+    top: 33.7%;
+  }
+}
+
+.bad-days-page__brave-container_background {
+  background-color: var.$blue;
+  background-image: url('../../img/bad-days-page/brave-container/art-1.png'),
+    url('../../img/bad-days-page/brave-container/art-2.png'),
+    url('../../img/bad-days-page/brave-container/art-3.png'),
+    url('../../img/bad-days-page/brave-container/couch-green.png'),
+    url('../../img/bad-days-page/brave-container/pattern.png'),
+    url('../../img/bad-days-page/brave-container/flower-2.png'),
+    url('../../img/bad-days-page/brave-container/break-10.png');
+  background-size:
+    21% auto,
+    11.6% auto,
+    14.7% auto,
+    67.1% auto,
+    31% auto,
+    58.5% auto,
+    100% auto;
+  background-position:
+    top 5% right 6.5%,
+    top 21% right 41.3%,
+    top 44.8% right 4%,
+    top 60% left 0,
+    top 0 right 0,
+    top 29% left 0,
+    bottom 0 right 0;
+  background-repeat: no-repeat;
+}
+
+.bad-days-page__hurt-paw-container {
+  height: 114.64vw;
+  .hurt-paw-container__subtitle {
+    position: absolute;
+    left: 56.7%;
+    top: 1.8%;
+  }
+  .hurt-paw-container__elements {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    margin-left: 4%;
+  }
+  .hurt-paw-container__first-element {
+    margin-top: 10%;
+    align-items: end;
+  }
+  .hurt-paw-container__second-element {
+    margin-top: 13.5%;
+    align-items: start;
+  }
+  .card {
+    flex-shrink: 0;
+  }
+  .card_description {
+    width: 30.2%;
+  }
+}
+
+.bad-days-page__hurt-paw-container_background {
+  background-color: var.$primary-black;
+  background-image: url('../../img/bad-days-page/hurt-paw-container/cloud-pic-2.png'),
+    url('../../img/bad-days-page/hurt-paw-container/cloud-pic-revert-2.png'),
+    url('../../img/bad-days-page/hurt-paw-container/break-11.png');
+  background-size:
+    40.2% auto,
+    36.6% auto,
+    24.3% auto;
+  background-position:
+    top 14% right 0,
+    bottom 0 left 0,
+    bottom 0 right 0;
+  background-repeat: no-repeat;
+}
+
+//.check-image {
+//  position: absolute;
+//  background-color: red;
+//  width: 1160px;
+//  height: 309px;
+//  top: 200px;
+//  right: 0;
+//  opacity: 0.2;
+//}
