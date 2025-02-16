@@ -1,0 +1,50 @@
+@use '../var';
+@use '../mixins';
+
+.superhero-page__muffin-hero-container {
+    height: 64.64svw;
+    .muffin-hero-container__subtitle-text-wrapper {
+      width: 35.7%;
+    }
+    .muffin-hero__muffin-superhero-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 58.8%;
+    }
+  }
+  .superhero-page__muffin-hero-container_background {
+    background-color: var.$green;
+    background-image:
+            url('../../img/superhero-page/star-pic-revert.png'),
+            url('../../img/superhero-page/star-pic.png'),
+            url('../../img/superhero-page/star-pic.png');
+    background-size: 29.4% auto,
+    16.5% auto,
+    6.25% auto;
+    background-position:
+            left 11% top 100%,
+            left 43% top 96%,
+            right 15.5% top 5%;
+    background-repeat: no-repeat;
+  }
+
+  .superhero-page__about-container {
+    height: 53.2svw;
+
+    .about-container__text_wrapper {
+      width: 32.7%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .superhero-page__about-container_background {
+    background-color: var.$white;
+    background-image: url('../../img/superhero-page/heart-4.png');
+    background-size: 26.7% auto;
+    background-position: 86% 50%;
+    background-repeat: no-repeat;
+  }
+
+

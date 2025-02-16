@@ -6,8 +6,8 @@
   background-color: var.$white;
   border-radius: 4%;
   padding: 1%;
-  width: 20.3vw;
-  height: 20.8vw;
+  width: 20.3svw;
+  height: 20.8svw;
 }
 
 .card {
@@ -16,18 +16,18 @@
   background-color: var.$white;
   border-radius: 4%;
   padding: 1%;
-  width: 26.6vw;
-  height: 35.3vw;
-  box-shadow: 2vh 1.15vh 3vh 0 #cbabbd3d;
+  width: 26.6svw;
+  height: 35.3svw;
+  box-shadow: 2svh 1.15svh 3svh 0 #cbabbd3d;
 }
 
 .card_right-clip::after {
   content: '';
   position: absolute;
-  right: -4.8vh;
-  top: -1.6vh;
-  width: 16.6vh;
-  height: 13.7vh;
+  right: -4.8svh;
+  top: -1.6svh;
+  width: 16.6svh;
+  height: 13.7svh;
   background-image: url('../img/cards/right-clip.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -35,21 +35,21 @@
 .card_left-clip::before {
   content: '';
   position: absolute;
-  left: -4.8vh;
-  top: -1.6vh;
-  width: 16.6vh;
-  height: 13.7vh;
+  left: -4.8svh;
+  top: -1.6svh;
+  width: 16.6svh;
+  height: 13.7svh;
   background-image: url('../img/cards/left-clip.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .card__image {
-  border-radius: 1.8vh;
+  border-radius: 1.8svh;
   width: 100%;
   max-height: 100%;
 }
 
 .card__header {
-  margin-top: 2.4vh;
+  margin-top: 2.4svh;
 }

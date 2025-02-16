@@ -9,7 +9,7 @@
 }
 
 .one-day-page__title-container {
-  height: 109.3vw;
+  height: 109.3svw;
 
   .title-container__subtitle {
   }
@@ -68,7 +68,7 @@
 }
 
 .one-day-page__scary-muffin-container {
-  height: 156vw;
+  height: 156svw;
   .scary-muffin-container__first-text-container {
     margin-top: 23%;
   }
@@ -129,7 +129,7 @@
 }
 
 .one-day-page__curious-container {
-  height: 116vw;
+  height: 116svw;
   .curious-container__header {
     width: 55.4%;
     margin-top: 15.7%;
@@ -147,8 +147,8 @@
     position: relative;
     margin-left: -6.2%;
     margin-top: 18%;
-    width: 99vw;
-    height: 36.1vw;
+    width: 99svw;
+    height: 36.1svw;
     .mini-card_tasty-food {
       position: absolute;
       background-color: var.$green;
@@ -179,10 +179,10 @@
       url('../../img/one-day-page/curious-container/exclamation.png'),
       url('../../img/one-day-page/curious-container/vector-road.svg');
     background-size:
-      4vw auto,
-      4vw auto,
-      4vw auto,
-      4vw auto,
+      4svw auto,
+      4svw auto,
+      4svw auto,
+      4svw auto,
       100% auto;
     background-position:
       top 5.5% left 76%,
@@ -233,7 +233,7 @@
 }
 
 .one-day-page__love-container {
-  height: 147.2vw;
+  height: 147.2svw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +253,7 @@
 }
 
 .one-day-page__talent-container {
-  height: 102vw;
+  height: 102svw;
   .talent-container__text {
     width: 53%;
     margin-top: -3%;

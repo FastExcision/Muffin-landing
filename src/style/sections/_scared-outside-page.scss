@@ -1,0 +1,132 @@
+@use '../var';
+
+.scared-outside-page__still-scared-container {
+  height: 100.3svw;
+  .still-scared-container__text-container {
+    width: 38.5%;
+  }
+  .still-scared-container__header {
+    position: absolute;
+    width: 59%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1%;
+  }
+  .still-scared-container__muffin-img {
+    position: absolute;
+    width: 74.3%;
+
+    right: 0;
+    top: 0;
+  }
+  .still-scared-container__food-img {
+    position: absolute;
+    width: 48%;
+    left: 0;
+    top: 47.3%;
+  }
+}
+
+.scared-outside-page__still-scared-container_background {
+  background-color: var.$pink;
+  background-image: url('../../img/scared-outside-page/still-scared-container/ball-pic.png'),
+    url('../../img/scared-outside-page/still-scared-container/many-exclamation.png'),
+    url('../../img/scared-outside-page/still-scared-container/hearts.png');
+  background-size:
+    65.5% auto,
+    65.1% auto,
+    40% auto;
+  background-position:
+    right 0 top 33%,
+    left 0 top 10.5%,
+    left 1% top 45%;
+  background-repeat: no-repeat;
+}
+
+.scared-outside-page__wasnt-scary-container {
+  height: 241.6svw;
+
+  .wasnt-scary-container__first-text {
+    position: absolute;
+    left: 67%;
+    top: 26.5%;
+    width: 28.7%;
+  }
+  .wasnt-scary-container__second-text {
+    position: absolute;
+    left: 38.3%;
+    top: 50.4%;
+  }
+  .wasnt-scary-container__third-text {
+    position: absolute;
+    left: 60.3%;
+    top: 73.8%;
+    width: 32.5%;
+  }
+  .wasnt-scary-container__fourth-text {
+    position: absolute;
+    left: 13.8%;
+    bottom: 6%;
+    width: 69.3%;
+  }
+}
+.scared-outside-page__wasnt-scary-container {
+  background-color: var.$white;
+  background-image: url('../../img/scared-outside-page/wasnt-scary-container/bird-2.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/bird-2.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/break-12.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/muffin-blue.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/muffin-purple.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/muffin-dark-blue.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/muffin-big-pink.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/bone-pic.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/streets-horrors.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/bird-3.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/cloud-3.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/cloud-revert-3.png'),
+
+    url('../../img/scared-outside-page/wasnt-scary-container/star.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/spiral-circle-2.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/flower-3.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/star.png'),
+    url('../../img/scared-outside-page/wasnt-scary-container/break-13.png');
+  background-size:
+    19.5% auto,
+    19.5% auto,
+    100% auto,
+    31% auto,
+    31% auto,
+    48.6% auto,
+    74.6% auto,
+    25.5% auto,
+    97.8% auto,
+    33.5% auto,
+    46.1% auto,
+    34.9% auto,
+    8% auto,
+    62.5% auto,
+    68% auto,
+    8% auto,
+    17% auto;
+  background-position:
+    right 40% top 0.7%,
+    left 8% top 15%,
+    right top,
+    left 49.1% top 64.5%,
+    left top 84.8%,
+    left 5% top 75.2%,
+    left 34% top 42.8%,
+    left 92% top 56%,
+    left top,
+    right top 10.5%,
+    right top 3%,
+    left top 20%,
+    left 6% top 39.7%,
+    left top 64%,
+    left 47% top 66%,
+    left 33% top 83.3%,
+    right bottom;
+  background-repeat: no-repeat;
+}
+
+

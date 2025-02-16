@@ -4,15 +4,15 @@
   font-family: SFProDisplay, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.39vw;
+  font-size: 1.39svw;
   letter-spacing: 0.03em;
 }
 
 @mixin main-button_style {
   @include button-text-style;
-  padding: 0.93vw 0;
+  padding: 0.93svw 0;
   border: none;
-  border-radius: 0.87vw;
+  border-radius: 0.87svw;
   background-color: var.$white;
   color: var.$dark-blue;
   &:hover {

@@ -2,7 +2,7 @@
 @use '../mixins';
 
 .childhood-page {
-  height: 64.64vw;
+  height: 64.64svw;
 }
 
 .childhood-page_background {
@@ -25,7 +25,7 @@
 
 .childhood-page__subtitle {
   display: inline-block;
-  padding-bottom: 1.25vh;
+  padding-bottom: 1.25svh;
 }
 
 .childhood-page__content {
@@ -35,15 +35,9 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  row-gap: 1.25vh;
+  row-gap: 1.25svh;
 }
 
-.childhood-page__about {
-  justify-self: right;
-}
-
-.childhood-page__card-wrapper {
-}
 
 .card_young-dog {
   position: absolute;

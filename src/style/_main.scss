@@ -4,11 +4,16 @@
 * {
   box-sizing: border-box;
 }
+body {
+  line-height: 1.2;
+}
+.display-none {
+  display: none;
+}
 
 .none-select {
   user-select: none;
 }
-
 .text-margin-top {
   margin-top: 2%;
 }
@@ -17,31 +22,31 @@
 }
 
 .section_padding {
-  padding-top: 9.26vw;
-  padding-left: 5.79vw;
+  padding-top: 9.26svw;
+  padding-left: 5.79svw;
 }
 .padding-sm {
-  padding-left: 7.5vw;
+  padding-left: 7.5svw;
 }
 .padding-md {
-  padding-left: 14.9vw;
+  padding-left: 14.9svw;
 }
 .padding-lg {
-  padding-left: 22.4vw;
+  padding-left: 22.4svw;
 }
 
 .title {
   font-family: SFProDisplay, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 18.63vw;
+  font-size: 18.63svw;
 }
 
 .subtitle {
   font-family: SFProDisplay, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 3.94vw;
+  font-size: 3.94svw;
   letter-spacing: 0.03em;
 }
 
@@ -49,7 +54,7 @@
   font-family: SFProDisplay, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 2.2vw;
+  font-size: 2.2svw;
   letter-spacing: 0.03em;
 }
 
@@ -57,14 +62,14 @@
   font-family: SFProDisplay, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 11.1vw;
+  font-size: 11.1svw;
 }
 
 .text_lg-italic {
   font-family: SFProDisplay, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 2.2vw;
+  font-size: 2.2svw;
   letter-spacing: 0.03em;
 }
 
@@ -72,21 +77,21 @@
   font-family: SFProDisplay, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.16vw;
+  font-size: 1.16svw;
 }
 
 .text_md {
   font-family: SFProDisplay, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.16vw;
+  font-size: 1.16svw;
   letter-spacing: 0.07em;
 }
 .text_sm {
   font-family: SFProDisplay, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.93vw;
+  font-size: 0.93svw;
 }
 
 .container {
@@ -94,7 +99,7 @@
   flex-direction: column;
   position: relative;
   width: 100%;
-  row-gap: 0.8vw;
+  row-gap: 0.8svw;
 }
 
 .green {

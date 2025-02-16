@@ -9,7 +9,7 @@
 }
 
 .bad-days-page__afraid-container {
-  height: 150.3vw;
+  height: 150.3svw;
   .afraid-container__header {
     margin-left: 14%;
   }
@@ -62,18 +62,22 @@
 }
 
 .bad-days-page__brave-container {
-  height: 135.6vw;
+  height: 135.6svw;
   .brave-container__first-text {
     margin-left: 5.7%;
     margin-top: 4%;
   }
   .brave-container__second-text {
+    margin-left: 5.7%;
+  }
+  .brave-container__third-text {
     position: absolute;
     top: 30%;
     left: 67%;
   }
   .brave-container__image {
     position: absolute;
+    width: 28.4%;
     left: 34%;
     top: 33.7%;
   }
@@ -108,7 +112,7 @@
 }
 
 .bad-days-page__hurt-paw-container {
-  height: 114.64vw;
+  height: 114.64svw;
   .hurt-paw-container__subtitle {
     position: absolute;
     left: 56.7%;
@@ -151,13 +155,3 @@
     bottom 0 right 0;
   background-repeat: no-repeat;
 }
-
-//.check-image {
-//  position: absolute;
-//  background-color: red;
-//  width: 1160px;
-//  height: 309px;
-//  top: 200px;
-//  right: 0;
-//  opacity: 0.2;
-//}
