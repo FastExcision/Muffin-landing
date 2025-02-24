@@ -1,11 +1,10 @@
 @use '../var';
 
 .one-day-page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  row-gap: 0.8svw;
 }
 
 .one-day-page__title-container {

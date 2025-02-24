@@ -1,4 +1,3 @@
-/* global document */
 import header from '../pages/header.html';
 import titlePage from '../pages/title-page.html';
 import childhoodPage from '../pages/childhood-page.html';

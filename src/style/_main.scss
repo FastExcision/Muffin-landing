@@ -6,9 +6,31 @@
 }
 body {
   line-height: 1.2;
+  overflow-y: hidden;
 }
+main {
+}
+
+section {
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  row-gap: 0.8svw;
+}
+
 .display-none {
   display: none;
+}
+
+.section {
+  display: none;
+}
+.section.active {
+  display: flex;
 }
 
 .none-select {
@@ -92,14 +114,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 0.93svw;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  row-gap: 0.8svw;
 }
 
 .green {
