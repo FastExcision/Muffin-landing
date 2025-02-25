@@ -26,9 +26,6 @@ section {
   display: none;
 }
 
-.section {
-  display: none;
-}
 .section.active {
   display: flex;
 }
@@ -136,4 +133,7 @@ section {
 }
 .dark-blue {
   color: var.$dark-blue;
+}
+.gray {
+  color: var.$gray;
 }
