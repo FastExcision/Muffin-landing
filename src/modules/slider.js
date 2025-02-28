@@ -1,22 +1,35 @@
-// осталось хедер. делать ли отдельным модулем и экспортировать
+// осталось хедер. структура функций
 const slides = document.querySelectorAll('.slide');
-const appearText = document.querySelectorAll('.appearText');
-const slidesArray = Object.values(slides);
-const appearTextArray = Object.values(appearText);
-const childhoodPage = document.getElementById('childhood-page');
 
-const slidesArrayLength = slidesArray.length;
+const slidesLength = slides.length;
 const scrollLength = window.innerHeight / 1.5;
 
 let activeSlideIndex = 0;
-let activeSlideHeight = slidesArray[activeSlideIndex].offsetHeight;
-let childhoodPageStateIndex = 0;
-
+let activeSlideHeight = slides[activeSlideIndex].offsetHeight;
+const defaultSlide = {
+  length: 0,
+  currentStateIndex: 0,
+  section: undefined,
+  appearText: undefined,
+}
+const slideState = [
+  { ...defaultSlide },
+  {
+    ...defaultSlide,
+    length: slides[1].querySelectorAll('.appear-text').length,
+    section: slides[1],
+    appearText: slides[1].querySelectorAll('.appear-text'),
+  },
+  { ...defaultSlide },
+  { ...defaultSlide },
+  { ...defaultSlide },
+  { ...defaultSlide },
+];
 
 // загрузчик стартовой страницы
 window.onload = () => {
   setTimeout(() => {
-    slidesArray[activeSlideIndex].scrollIntoView();
+    slides[activeSlideIndex].scrollIntoView();
   }, 1);
 };
 
@@ -24,7 +37,7 @@ window.onload = () => {
 const calcSlideHeight = () => {
   activeSlideHeight = 0;
   for (let i = activeSlideIndex; i >= 0; i -= 1) {
-    activeSlideHeight += slidesArray[i].offsetHeight;
+    activeSlideHeight += slides[i].offsetHeight;
   }
 };
 const scrollBottom = (activeSlide) => {
@@ -51,60 +64,62 @@ const scrollTop = (activeSlide) => {
   });
 };
 const toNextSlide = (nextSlide) => {
-  nextSlide.scrollIntoView();
+  nextSlide.scrollIntoView(
+    // { behavior: 'smooth' }
+  );
   activeSlideIndex += 1;
   calcSlideHeight();
 };
 const toPrevSlide = (prevSlide) => {
-  prevSlide.scrollIntoView();
+  prevSlide.scrollIntoView(
+    // { behavior: 'smooth' }
+  );
   activeSlideIndex -= 1;
   calcSlideHeight();
 };
 
 // типа основные
-const childhoodPageChangeState = (scrollDirection, nextSlide, prevSlide) => {
-  const activeElement = appearTextArray[childhoodPageStateIndex];
-  const prevElement = appearTextArray[childhoodPageStateIndex - 1];
-  const nextElement = appearTextArray[childhoodPageStateIndex + 1];
-  if (
-    childhoodPageStateIndex === appearTextArray.length &&
-    scrollDirection > 0
-  ) {
-    toNextSlide(nextSlide);
-    return;
-  }
-  if (childhoodPageStateIndex === 0 && scrollDirection < 0) {
-    toPrevSlide(prevSlide);
-    return;
-  }
+const pageAppearTextChangeState = (scrollDirection) => {
+
+  const activeElement =
+    slideState[activeSlideIndex].appearText[slideState[activeSlideIndex].currentStateIndex];
+  const nextElement =
+    slideState[activeSlideIndex].appearText[slideState[activeSlideIndex].currentStateIndex + 1];
+  const prevElement =
+    slideState[activeSlideIndex].appearText[slideState[activeSlideIndex].currentStateIndex - 1];
+
   if (scrollDirection > 0) {
     activeElement.classList.add('gray');
     nextElement.classList.remove('display-none');
-    childhoodPageStateIndex += 1;
+    slideState[activeSlideIndex].currentStateIndex += 1;
     return;
   }
   if (scrollDirection < 0) {
     prevElement.classList.remove('gray');
     activeElement.classList.add('display-none');
-    childhoodPageStateIndex -= 1;
+    slideState[activeSlideIndex].currentStateIndex -= 1;
   }
 };
 const sectionScroll = (scrollDirection) => {
-  const activeSlide = slidesArray[activeSlideIndex];
-  const nextSlide = slidesArray[activeSlideIndex + 1];
-  const prevSlide = slidesArray[activeSlideIndex - 1];
-  console.log(
-    childhoodPageStateIndex, appearTextArray.length
-  );
-  if (
-    activeSlide === childhoodPage &&
-    ((childhoodPageStateIndex >= 0 &&
-      childhoodPageStateIndex < appearTextArray.length - 1) ||
-    (childhoodPageStateIndex <= appearTextArray.length && scrollDirection < 0))
-  ) {
-    childhoodPageChangeState(scrollDirection, nextSlide, prevSlide);
-    return;
-  }
+  const activeSlide = slides[activeSlideIndex];
+  const nextSlide = slides[activeSlideIndex + 1];
+  const prevSlide = slides[activeSlideIndex - 1];
+
+  const isAtStart = slideState[activeSlideIndex].currentStateIndex === 0;
+  const isAtEnd = slideState[activeSlideIndex].currentStateIndex === slideState[activeSlideIndex].length - 1;
+  const canScrollForward =
+    slideState[activeSlideIndex].currentStateIndex >= 0 && !isAtEnd && scrollDirection > 0;
+  const canScrollBackward =
+    slideState[activeSlideIndex].currentStateIndex < slideState[activeSlideIndex].length &&
+    !isAtStart &&
+    scrollDirection < 0;
+
+  if ((activeSlide === slideState[activeSlideIndex].section) &&
+    canScrollForward ||      canScrollBackward ||      (slideState[activeSlideIndex].currentStateIndex > 0 && scrollDirection < 0))
+     {
+      pageAppearTextChangeState(scrollDirection);
+      return;
+    }
 
   if (
     (scrollDirection > 0 &&
@@ -116,27 +131,27 @@ const sectionScroll = (scrollDirection) => {
       scrollBottom(activeSlide);
       return;
     }
-    scrollTop(activeSlide);
-    return;
+      scrollTop(activeSlide);
+      return;
   }
 
   if (
     scrollDirection > 0 &&
     activeSlideIndex >= 0 &&
-    activeSlideIndex < slidesArrayLength - 1
+    activeSlideIndex < slidesLength - 1
   ) {
     toNextSlide(nextSlide);
   }
   if (
     scrollDirection < 0 &&
     activeSlideIndex > 0 &&
-    activeSlideIndex <= slidesArrayLength - 1
+    activeSlideIndex <= slidesLength - 1
   ) {
     toPrevSlide(prevSlide);
   }
 };
 
-// листенеры
+//
 window.addEventListener('wheel', ({ deltaY }) => {
   sectionScroll(deltaY);
 });

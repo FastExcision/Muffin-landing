@@ -8,18 +8,18 @@
 .childhood-page_background {
   background-image: url('../../img/childhood-page/texture-break-2.png'),
     url('../../img/childhood-page/arrow2.png'),
-    url('../../img/childhood-page/bone.png'),
-    url('../../img/childhood-page/flower.png');
+    url('../../img/childhood-page/bone.png');
+  //url('../../img/childhood-page/flower.png');
   background-size:
     10% 100%,
     23.5% auto,
-    39% auto,
-    15.5% auto;
+    39% auto;
+  //15.5% auto;
   background-position:
     bottom 0 right 0,
     top 5% right 19%,
-    bottom 10% left 8%,
-    bottom 12% right 45%;
+    bottom 10% left 8%;
+  //bottom 12% right 45%;
   background-repeat: no-repeat;
 }
 
@@ -35,16 +35,34 @@
   align-items: start;
 }
 
+.flower-img {
+  position: absolute;
+  bottom: -175%;
+  right: -55%;
+}
+
+//.card_young-dog {
+//  position: absolute;
+//  top: 11.3%;
+//  right: 27%;
+//  transform: rotate(11deg);
+//}
 .card_young-dog {
   position: absolute;
-  top: 11.3%;
-  right: 27%;
+  top: -185%;
+  right: -85%;
   transform: rotate(11deg);
 }
 
+//.card_muffin-brother {
+//  position: absolute;
+//  top: 37%;
+//  right: 8%;
+//  transform: rotate(-13deg);
+//}
 .card_muffin-brother {
   position: absolute;
-  top: 37%;
-  right: 8%;
+  top: -4%;
+  right: -138%;
   transform: rotate(-13deg);
 }
