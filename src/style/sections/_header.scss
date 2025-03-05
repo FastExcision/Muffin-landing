@@ -16,13 +16,9 @@ header {
 }
 
 .menu__nav-item {
-  list-style: none;
-}
-
-.nav-item__link {
+  cursor: pointer;
   text-decoration: none;
   text-underline-offset: 3px;
-  color: rebeccapurple;
 
   &:hover {
     text-decoration: underline 1px;
@@ -31,6 +27,6 @@ header {
   }
 }
 
-.nav-item__title-page {
+.active {
   text-decoration: underline;
 }

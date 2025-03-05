@@ -1,13 +1,23 @@
 // осталось хедер. структура функций
-import {toPrevSlide, toNextSlide, scrollTop, scrollBottom, getActiveSlideIndex, getActiveSlideHeight, slides, slidesLength} from './pageSliderUtils'
-import {pageAppearTextChangeState, slideState} from './appearText';
+import {
+  toPrevSlide,
+  toNextSlide,
+  scrollTop,
+  scrollBottom,
+  getActiveSlideIndex,
+  getActiveSlideHeight,
+  slides,
+  slidesLength,
+} from './pageSliderUtils';
+import { pageAppearTextChangeState, slideState } from './appearText';
+
+import { menuSlideNav, navMenuActiveSlide } from './navigation';
 
 window.onload = () => {
   setTimeout(() => {
     slides[getActiveSlideIndex()].scrollIntoView();
   }, 1);
 };
-
 
 const sectionScroll = (scrollDirection) => {
   const activeSlideIndex = getActiveSlideIndex();
@@ -17,20 +27,28 @@ const sectionScroll = (scrollDirection) => {
   const prevSlide = slides[activeSlideIndex - 1];
 
   const isAtStart = slideState[activeSlideIndex].currentStateIndex === 0;
-  const isAtEnd = slideState[activeSlideIndex].currentStateIndex === slideState[activeSlideIndex].length - 1;
+  const isAtEnd =
+    slideState[activeSlideIndex].currentStateIndex ===
+    slideState[activeSlideIndex].lengthStateIndex - 1;
   const canScrollForward =
-    slideState[activeSlideIndex].currentStateIndex >= 0 && !isAtEnd && scrollDirection > 0;
+    slideState[activeSlideIndex].currentStateIndex >= 0 &&
+    !isAtEnd &&
+    scrollDirection > 0;
   const canScrollBackward =
-    slideState[activeSlideIndex].currentStateIndex < slideState[activeSlideIndex].length &&
+    slideState[activeSlideIndex].currentStateIndex <
+      slideState[activeSlideIndex].lengthStateIndex &&
     !isAtStart &&
     scrollDirection < 0;
 
-  if ((activeSlide === slideState[activeSlideIndex].section) &&
-    canScrollForward ||      canScrollBackward ||      (slideState[activeSlideIndex].currentStateIndex > 0 && scrollDirection < 0))
-     {
-      pageAppearTextChangeState(scrollDirection, activeSlideIndex);
-      return;
-    }
+  if (
+    (activeSlide === slideState[activeSlideIndex].section &&
+      canScrollForward) ||
+    canScrollBackward ||
+    (slideState[activeSlideIndex].currentStateIndex > 0 && scrollDirection < 0)
+  ) {
+    pageAppearTextChangeState(scrollDirection, activeSlideIndex);
+    return;
+  }
 
   if (
     (scrollDirection > 0 &&
@@ -42,8 +60,8 @@ const sectionScroll = (scrollDirection) => {
       scrollBottom(activeSlide);
       return;
     }
-      scrollTop(activeSlide);
-      return;
+    scrollTop(activeSlide);
+    return;
   }
 
   if (
@@ -52,6 +70,8 @@ const sectionScroll = (scrollDirection) => {
     activeSlideIndex < slidesLength - 1
   ) {
     toNextSlide(nextSlide);
+    navMenuActiveSlide();
+    return;
   }
   if (
     scrollDirection < 0 &&
@@ -59,8 +79,10 @@ const sectionScroll = (scrollDirection) => {
     activeSlideIndex <= slidesLength - 1
   ) {
     toPrevSlide(prevSlide);
+    navMenuActiveSlide();
   }
 };
+menuSlideNav();
 
 window.addEventListener('wheel', ({ deltaY }) => {
   sectionScroll(deltaY);
