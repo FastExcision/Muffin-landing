@@ -1,4 +1,3 @@
-// осталось хедер. структура функций
 import {
   toPrevSlide,
   toNextSlide,
@@ -54,7 +53,7 @@ const sectionScroll = (scrollDirection) => {
     (scrollDirection > 0 &&
       window.scrollY + window.innerHeight < activeSlideHeight) ||
     (scrollDirection < 0 &&
-      window.scrollY > activeSlideHeight - activeSlide.offsetHeight)
+      window.scrollY - 2 > activeSlideHeight - activeSlide.offsetHeight)
   ) {
     if (scrollDirection > 0) {
       scrollBottom(activeSlide);
@@ -64,34 +63,24 @@ const sectionScroll = (scrollDirection) => {
     return;
   }
 
-  if (
-    scrollDirection > 0 &&
-    activeSlideIndex >= 0 &&
-    activeSlideIndex < slidesLength - 1
-  ) {
+  if (scrollDirection > 0 && activeSlideIndex < slidesLength - 1) {
     toNextSlide(nextSlide);
-    navMenuActiveSlide();
-    return;
-  }
-  if (
-    scrollDirection < 0 &&
-    activeSlideIndex > 0 &&
-    activeSlideIndex <= slidesLength - 1
-  ) {
+  } else if (scrollDirection < 0 && activeSlideIndex > 0) {
     toPrevSlide(prevSlide);
-    navMenuActiveSlide();
   }
+  navMenuActiveSlide();
 };
-menuSlideNav();
 
+menuSlideNav();
 window.addEventListener('wheel', ({ deltaY }) => {
   sectionScroll(deltaY);
 });
 window.addEventListener('keydown', ({ key }) => {
+
   if (key === 'ArrowUp') {
     sectionScroll(-1);
   }
-  if (key === 'ArrowDown') {
+  if (key === 'ArrowDown' || key === " ") {
     sectionScroll(1);
   }
 });

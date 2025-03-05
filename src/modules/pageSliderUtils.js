@@ -47,7 +47,7 @@ export const toNextSlide = (nextSlide) => {
   calcSlideHeight();
 };
 export const toPrevSlide = (prevSlide) => {
-  prevSlide.scrollIntoView({ behavior: 'smooth' });
+  prevSlide.scrollIntoView({ behavior: 'smooth'});
   activeSlideIndex -= 1;
   calcSlideHeight();
 };

@@ -3,9 +3,8 @@ import {
   scrollToSlide,
   calcSlideHeight,
   getPrevSlideHeight,
-  getActiveSlideIndex
+  getActiveSlideIndex,
 } from './pageSliderUtils';
-// import {slideState} from './appearText';
 
 const titlePage = document.getElementById('title-page');
 const childhoodPage = document.getElementById('childhood-page');
@@ -35,32 +34,25 @@ const menuButtonTargets = [
 
 export const navMenuActiveSlide = () => {
   header.style.top = `${getPrevSlideHeight()}px`;
-  for (let i = 0; i < menuButtonTargets.length; i += 1) {
-    if (slides[getActiveSlideIndex()] !== menuButtonTargets[i].slideTarget) {
-      menuButtonTargets[i].headerTarget.classList.remove('active');
-    } else {
-      menuButtonTargets[i].headerTarget.classList.add('active');
-    }
-  }
-  if (slides[getActiveSlideIndex()] === childhoodPage) {
-    header.classList.remove('white');
-    header.classList.add('primary-black');
-    return;
-  }
-    header.classList.remove('primary-black');
-    header.classList.add('white');
+  const activeSlide = slides[getActiveSlideIndex()];
+
+  menuButtonTargets.forEach(({ slideTarget, headerTarget }) => {
+    headerTarget.classList.toggle('active', slideTarget === activeSlide);
+  });
+  header.classList.toggle('primary-black', activeSlide === childhoodPage);
+  header.classList.toggle('white', activeSlide !== childhoodPage);
 };
 
 export const menuSlideNav = () => {
-  for (let i = 0; i < menuButtonTargets.length; i += 1) {
-    headerLinks[i].addEventListener('click', () => {
+  menuButtonTargets.forEach(({ slideTarget, headerTarget }) => {
+    headerTarget.addEventListener('click', () => {
       for (let j = 0; j < slides.length; j += 1) {
-        if (menuButtonTargets[i].slideTarget === slides[j]) {
+        if (slideTarget === slides[j]) {
           scrollToSlide(j);
           calcSlideHeight();
           navMenuActiveSlide();
         }
       }
     });
-  }
+  });
 };
