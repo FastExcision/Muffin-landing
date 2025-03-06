@@ -76,11 +76,10 @@ window.addEventListener('wheel', ({ deltaY }) => {
   sectionScroll(deltaY);
 });
 window.addEventListener('keydown', ({ key }) => {
-
   if (key === 'ArrowUp') {
     sectionScroll(-1);
   }
-  if (key === 'ArrowDown' || key === " ") {
+  if (key === 'ArrowDown' || key === ' ') {
     sectionScroll(1);
   }
 });

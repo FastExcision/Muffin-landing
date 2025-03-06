@@ -23,10 +23,7 @@ export const scrollBottom = (activeSlide) => {
     activeSlide.scrollIntoView({ behavior: 'smooth', block: 'end' });
     return;
   }
-  window.scrollTo({
-    top: window.scrollY + scrollLength,
-    behavior: 'smooth',
-  });
+  window.scrollTo({ top: window.scrollY + scrollLength, behavior: 'smooth' });
 };
 export const scrollTop = (activeSlide) => {
   if (
@@ -36,10 +33,7 @@ export const scrollTop = (activeSlide) => {
     activeSlide.scrollIntoView({ behavior: 'smooth' });
     return;
   }
-  window.scrollTo({
-    top: window.scrollY - scrollLength,
-    behavior: 'smooth',
-  });
+  window.scrollTo({ top: window.scrollY - scrollLength, behavior: 'smooth' });
 };
 export const toNextSlide = (nextSlide) => {
   nextSlide.scrollIntoView({ behavior: 'smooth' });
@@ -47,7 +41,7 @@ export const toNextSlide = (nextSlide) => {
   calcSlideHeight();
 };
 export const toPrevSlide = (prevSlide) => {
-  prevSlide.scrollIntoView({ behavior: 'smooth'});
+  prevSlide.scrollIntoView({ behavior: 'smooth' });
   activeSlideIndex -= 1;
   calcSlideHeight();
 };
